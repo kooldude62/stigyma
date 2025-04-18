@@ -1,0 +1,287 @@
+if not game.Players.LocalPlayer:FindFirstChild("PlayerGui"):FindFirstChild("stigymaa") then
+	local Converted = {
+		["_stigymaa"] = Instance.new("ScreenGui");
+		["_LocalScript"] = Instance.new("LocalScript");
+		["_os"] = Instance.new("StringValue");
+		["_datag2"] = Instance.new("GuiMain");
+		["_Main"] = Instance.new("ImageLabel");
+		["_Orbit"] = Instance.new("ImageLabel");
+		["_Ring"] = Instance.new("ImageLabel");
+		["_Main2"] = Instance.new("ImageLabel");
+		["_Orbi"] = Instance.new("LocalScript");
+	}
+
+	-- Properties:
+
+	Converted["_stigymaa"].ResetOnSpawn = false
+	Converted["_stigymaa"].Name = "stigymaa"
+	Converted["_stigymaa"].Parent = game:GetService("CoreGui")
+
+	Converted["_os"].Value = "wergwrefgewrgewrger"
+	Converted["_os"].Name = "os"
+	Converted["_os"].Parent = Converted["_stigymaa"]
+
+	Converted["_datag2"].DisplayOrder = 999
+	Converted["_datag2"].ResetOnSpawn = false
+	Converted["_datag2"].Name = "datag2"
+	Converted["_datag2"].Parent = Converted["_stigymaa"]
+
+	Converted["_Main"].Image = "rbxassetid://7102117818"
+	Converted["_Main"].ImageContent = Content
+	Converted["_Main"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Converted["_Main"].BackgroundTransparency = 1
+	Converted["_Main"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
+	Converted["_Main"].Position = UDim2.new(0.5, -2000, 0.5, -50)
+	Converted["_Main"].Size = UDim2.new(0, 100, 0, 100)
+	Converted["_Main"].Name = "Main"
+	Converted["_Main"].Parent = Converted["_datag2"]
+
+	Converted["_Orbit"].Image = "http://www.roblox.com/asset/?id=7101990169"
+	Converted["_Orbit"].ImageContent = Content
+	Converted["_Orbit"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Converted["_Orbit"].BackgroundTransparency = 1
+	Converted["_Orbit"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
+	Converted["_Orbit"].Size = UDim2.new(0.170000002, 0, 0.170000002, 0)
+	Converted["_Orbit"].ZIndex = 2
+	Converted["_Orbit"].Name = "Orbit"
+	Converted["_Orbit"].Parent = Converted["_Main"]
+
+	Converted["_Ring"].Image = "rbxassetid://7102118272"
+	Converted["_Ring"].ImageContent = Content
+	Converted["_Ring"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Converted["_Ring"].BackgroundTransparency = 1
+	Converted["_Ring"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
+	Converted["_Ring"].Size = UDim2.new(1, 0, 1, 0)
+	Converted["_Ring"].Name = "Ring"
+	Converted["_Ring"].Parent = Converted["_Main"]
+
+	Converted["_Main2"].Image = "rbxassetid://7102276469"
+	Converted["_Main2"].ImageContent = Content
+	Converted["_Main2"].ImageTransparency = 1
+	Converted["_Main2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Converted["_Main2"].BackgroundTransparency = 1
+	Converted["_Main2"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
+	Converted["_Main2"].Size = UDim2.new(1, 0, 1, 0)
+	Converted["_Main2"].ZIndex = 3
+	Converted["_Main2"].Name = "Main2"
+	Converted["_Main2"].Parent = Converted["_Main"]
+
+	-- Fake Module Scripts:
+
+	local fake_module_scripts = {}
+
+
+	-- Fake Local Scripts:
+
+	local function MTTTOOD_fake_script() -- Fake Script: StarterGui.stigymaa.LocalScript
+		local script = Instance.new("LocalScript")
+		script.Name = "LocalScript"
+		script.Parent = Converted["_stigymaa"]
+		local req = require
+		local require = function(obj)
+			local fake = fake_module_scripts[obj]
+			if fake then
+				return fake()
+			end
+			return req(obj)
+		end
+
+		activated = false
+		wait'.3'
+		hi = nil
+		script.Parent = nil
+		script = nil
+		connections = {
+			['printconsole'] = {},
+			['loadstring'] = {},
+			['GetObjects'] = {},
+			['syntax'] = {},
+		}
+		for i,v in pairs(connections) do
+			local newanimt = Instance.new'Animation'
+			newanimt.AnimationId = i..string.rep('4592', 100)
+			local cloney = newanimt:Clone()
+			connections[i].ready = false
+			connections[i].anim = newanimt
+			connections[i].animdupe = cloney
+			cloney.AnimationId = string.reverse(newanimt.AnimationId)
+			spawn(function()
+				cloney.Changed:wait()
+				newanimt.AnimationId = 'OKAYDOE'..string.rep('\0', 0)
+				connections[i].ready = true
+			end)
+		end
+		game:GetService'RunService'.RenderStepped:Connect(function()
+			for i,v in pairs(connections) do
+				v.animdupe.AnimationId = string.reverse(v.anim.AnimationId)
+			end
+		end)
+		local lan = Instance.new('Animation'--[[, game:GetService'Players'.LocalPlayer.PlayerScripts--]])
+		--an.Parent = workspace --no
+		lan.AnimationId = string.rep('lugxdd', 999)
+		dupean = lan:Clone()
+		game:GetService'RunService'.RenderStepped:Connect(function()
+			dupean.AnimationId = string.reverse(lan.AnimationId)
+		end)
+		repeat wait'' until lan.AnimationId ~= string.rep('lugxdd', 999)
+		if lan.AnimationId:find('CEX:') then
+			lan.AnimationId = string.rep('YEAH YOU GOT IT BRO XDX', 1)
+			repeat wait'' until lan.AnimationId:find'cool cool im ready broX'
+			lan.AnimationId = ('Name: '..game:GetService'Players'.LocalPlayer.Name)
+			repeat wait'' until lan.AnimationId:find'placei' and lan.AnimationId ~= 'Name: '..game:GetService'Players'.LocalPlayer.Name
+			local gamname = game:GetService'MarketplaceService':GetProductInfo(game.PlaceId).Name..string.rep(' ', 10)
+			lan.AnimationId = gamname
+			repeat wait'' until lan.AnimationId:find'lolx' and lan.AnimationId ~= gamname
+			lan.AnimationId = string.rep('fatxdd', 999)
+			activated = true
+			pcall(function() game:GetService("StarterGui"):SetCoreGuiEnabled("Backpack",true) end)
+		end
+		repeat wait'' until activated == true
+		function ohok()
+			if lan.AnimationId ~= string.rep('fatxdd', 999) then
+				if tonumber(lan.AnimationId) == 1 then guid.lol:Fire(true) lan.AnimationId = string.rep('fatxdd', 999) return end
+				pcall(function()
+					guid.lol:Fire(true)
+				end)
+				local animval = lan.AnimationId
+				if tostring(animval):find'<html>' then 
+					game:GetService'Players'.LocalPlayer:Kick'A web error occured! (if incorrectly kicked dm me)'
+					wait'3'
+					return
+				end
+				game:GetService'ReplicatedStorage'.DefaultChatSystemChatEvents.UnMutePlayerRequest:InvokeServer('SUP FAT MAN SCAT MAN BLACK AND WHITE AND BROWN MAN!!XZCzXC&&@#&$%&*@)#*&%(SSFD!', animval)
+				pcall(function()
+					guid.lol:Fire(false)
+				end)
+				lan.AnimationId = string.rep('fatxdd', 999)
+			end
+		end
+		--spawn(ohok)
+		dupean.Changed:Connect(ohok)
+
+		local newu = Instance.new('GuiMain', game:GetService'Players'.LocalPlayer:FindFirstChildOfClass'PlayerGui')
+		newu.ResetOnSpawn = false
+		newu.Name = 'Chat                        '
+		guid.Parent = newu
+		guid.Orbi.Disabled = false
+
+		game:GetService'ReplicatedStorage'.DefaultChatSystemChatEvents.UnMutePlayerRequest.OnClientInvoke = function(contype, datithas)
+			if connections[contype] then
+				local workin = connections[contype]
+				if workin.ready == false then
+					repeat wait'' until workin.ready == true
+				end
+				repeat wait'' until workin.anim.AnimationId == 'OKAYDOE'..string.rep('\0', 0)
+				workin.anim.AnimationId = datithas
+				workin.animdupe.Changed:wait()
+				if workin.animdupe.AnimationId == string.reverse(datithas) then
+					workin.animdupe.Changed:wait()
+				end
+				local chayd = workin.anim.AnimationId
+				workin.anim.AnimationId = 'OKAYDOE'..string.rep('\0', 0)
+				return chayd
+			end
+		end
+
+	end
+	local function CXOR_fake_script() -- Fake Script: StarterGui.stigymaa.datag2.Orbi
+		local script = Instance.new("LocalScript")
+		script.Name = "Orbi"
+		script.Parent = Converted["_datag2"]
+		local req = require
+		local require = function(obj)
+			local fake = fake_module_scripts[obj]
+			if fake then
+				return fake()
+			end
+			return req(obj)
+		end
+
+		local Main = script.Parent.Main
+		local Main2 = Main.Main2
+		local Orbit = Main.Orbit
+		local Ring = Main.Ring
+
+		--Notice: This relies on the fact it will be a perfectly round icon.
+		local RS = game:GetService("RunService").Heartbeat
+		local Tween = game:GetService("TweenService")
+		local WaitTime = 0.25
+		local LoadInfo = TweenInfo.new(WaitTime,Enum.EasingStyle.Linear,Enum.EasingDirection.Out,0,false,0)
+		local FlashInfo = TweenInfo.new(WaitTime,Enum.EasingStyle.Linear,Enum.EasingDirection.Out,1,true,0)
+		local hk = Main.AbsoluteSize.X/2
+		local MainSize = Main.AbsoluteSize.X
+		local ls = Orbit.AbsoluteSize.X/2
+		local r = hk
+		local theta = 0
+		local step = (2*math.pi)/450
+		local rotvel = 0.35
+		local StepInstance = Instance.new("NumberValue")
+		local RotInstance = Instance.new("NumberValue")
+		StepInstance.Changed:Connect(function()
+			step = StepInstance.Value
+		end)
+		RotInstance.Changed:Connect(function()
+			rotvel = RotInstance.Value
+		end)
+
+		local Modes = {
+			--Main Image--
+			Tween:Create(Main2,LoadInfo,{ImageTransparency=0.5}), --Indicates script loading
+			Tween:Create(Main2,LoadInfo,{ImageTransparency=1}),   --Indicated script completed
+			Tween:Create(Main2,FlashInfo,{ImageTransparency=0}),   --Pulse effect for completed
+			--Step Tween--
+			Tween:Create(StepInstance,LoadInfo,{Value=(2*math.pi)/180}),
+			Tween:Create(StepInstance,LoadInfo,{Value=(2*math.pi)/450}),
+			--Rot Tween--
+			Tween:Create(RotInstance,LoadInfo,{Value=1}),
+			Tween:Create(RotInstance,LoadInfo,{Value=0.35}),
+		}
+		Modes[2].Completed:Connect(function()
+			Modes[3]:Play()
+		end)
+
+		local function ScriptLoading()
+			Modes[6]:Play()
+			Modes[4]:Play()
+			Modes[1]:Play()
+		end
+
+		local function ScriptDone()
+			Modes[2]:Play()
+			Modes[5]:Play()
+			Modes[7]:Play()
+		end
+		spawn(function()
+			local deb = false
+			local hi = script.Parent.Main
+			hi:TweenPosition(UDim2.new(0.5, -50,0.5, -50), Enum.EasingDirection.In)
+			wait'3'
+			hi:TweenPosition(UDim2.new(0, 12,1, -115), Enum.EasingDirection.Out)
+			game:GetService'Players'.LocalPlayer.Chatted:Connect(function(agg)
+				pcall(function()
+					if agg == '/e hidemeh' then
+						hi.Visible = not hi.Visible
+					end
+				end)
+			end)
+		end)
+		--DEMO CODE--
+
+		ScriptLoading()
+		wait(math.random(1,3))
+		ScriptDone()
+		--DEMO CODE--
+
+		while RS:wait() do
+			theta = theta < 360 and theta + step or 0
+			local x = (hk + r * math.cos(theta) - ls)
+			local y = (hk + r * math.sin(theta) - ls)
+			Orbit.Position = UDim2.new(x/MainSize,0,y/MainSize,0)
+			Ring.Rotation = Ring.Rotation < 360 and Ring.Rotation + rotvel or 0
+			RS:wait()
+		end
+	end
+
+	coroutine.wrap(MTTTOOD_fake_script)()
+	coroutine.wrap(CXOR_fake_script)()
+end
