@@ -15,7 +15,7 @@ if not game.Players.LocalPlayer:FindFirstChild("PlayerGui"):FindFirstChild("stig
 
 	Converted["_stigymaa"].ResetOnSpawn = false
 	Converted["_stigymaa"].Name = "stigymaa"
-	Converted["_stigymaa"].Parent = game:GetService("CoreGui")
+	Converted["_stigymaa"].Parent = game.Players.LocalPlayer:FindFirstChild("PlayerGui")
 
 	Converted["_os"].Value = "wergwrefgewrgewrger"
 	Converted["_os"].Name = "os"
@@ -27,7 +27,6 @@ if not game.Players.LocalPlayer:FindFirstChild("PlayerGui"):FindFirstChild("stig
 	Converted["_datag2"].Parent = Converted["_stigymaa"]
 
 	Converted["_Main"].Image = "rbxassetid://7102117818"
-	Converted["_Main"].ImageContent = Content
 	Converted["_Main"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Converted["_Main"].BackgroundTransparency = 1
 	Converted["_Main"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
@@ -37,7 +36,6 @@ if not game.Players.LocalPlayer:FindFirstChild("PlayerGui"):FindFirstChild("stig
 	Converted["_Main"].Parent = Converted["_datag2"]
 
 	Converted["_Orbit"].Image = "http://www.roblox.com/asset/?id=7101990169"
-	Converted["_Orbit"].ImageContent = Content
 	Converted["_Orbit"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Converted["_Orbit"].BackgroundTransparency = 1
 	Converted["_Orbit"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
@@ -47,7 +45,6 @@ if not game.Players.LocalPlayer:FindFirstChild("PlayerGui"):FindFirstChild("stig
 	Converted["_Orbit"].Parent = Converted["_Main"]
 
 	Converted["_Ring"].Image = "rbxassetid://7102118272"
-	Converted["_Ring"].ImageContent = Content
 	Converted["_Ring"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Converted["_Ring"].BackgroundTransparency = 1
 	Converted["_Ring"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
@@ -56,7 +53,6 @@ if not game.Players.LocalPlayer:FindFirstChild("PlayerGui"):FindFirstChild("stig
 	Converted["_Ring"].Parent = Converted["_Main"]
 
 	Converted["_Main2"].Image = "rbxassetid://7102276469"
-	Converted["_Main2"].ImageContent = Content
 	Converted["_Main2"].ImageTransparency = 1
 	Converted["_Main2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Converted["_Main2"].BackgroundTransparency = 1
